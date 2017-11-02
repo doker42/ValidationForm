@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My Registrations FORM</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h1>Registration Form</h1>
+<div class="regform">
+    <form method="POST" action="" onsubmit="return Validate()" name="vform">
+    <!--USER NAME-->
+        <div>
+            <input id="name" type="text" name="username" class="textInput" placeholder="UserName" />
+            <div id="name error" class="val_error"></div>
+        </div>
+        <!--EMAIL-->
+        <div>
+            <input id="email" type="text" name="email" class="textInput" placeholder="Email"/>
+            <div id="email error" class="val_error error"></div>
+        </div>
+        <!--FONE-->
+        <div>
+            <label for="fone">FONE</label>
+            <input id="fone" type="text" name="fone" class="textInput" placeholder="+380995559911"/>
+            <div id="fone error" class="val_error error"></div>
+        </div>
+        <!--Adress-->
+        <div>
+            <input type="text" name="adress" class="textInput" placeholder="Adress"/>
+            <div id="adress error" class="val_error error"></div>
+        </div>
+        <!--Adress 2 row-->
+        <div>
+            <input type="text" name="adress_1" class="textInput" placeholder="Adress add"/>
+            <div id="adress_1 error" class="val_error error"></div>
+        </div>
+        <!--ZIP-->
+        <div>
+            <input type="text" name="zip" class="textInput" placeholder="Zip code"/>
+            <div id="zip error" class="val_error error"></div>
+        </div>
+        <!--City-->
+        <div>
+            <input type="text" name="city" class="textInput" placeholder="City"/>
+            <div id="city error" class="val_error error"></div>
+        </div>
+        <!--Country-->
+        <div>
+            <input type="text" name="country" class="textInput" placeholder="Country"/>
+            <div id="country error" class="val_error error"></div>
+        </div>
+        <!--check box-->
+        <div>
+            <input id="accept" type="checkbox" name="accept"  > Accept <br>
+            <div id="check_error" class="val_error error"></div>
+        </div>
+
+        <!--SUBMIT-->
+        <div>
+            <input type="submit" value="Register" class="btn" name="register"/>
+        </div>
+    </form>
+</div>
+
+<input value="Click me" onclick="alert('Длинный Вариант Валидации, Следующий сделаю Циклом ')" type="button">
+
+
+<script src="main_2.js"></script>
+
+</body>
+</html>
